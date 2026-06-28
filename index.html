@@ -861,12 +861,12 @@
   <div class="glass rsvp-card reveal">
 
     <div class="form-group">
-      <label class="form-label" for="rsvp-name"> </label>
+      <label class="form-label" for="rsvp-name">Full Name</label>
       <input type="text" id="rsvp-name" class="form-input" placeholder="Your name">
     </div>
 
     <div class="form-group">
-      <label class="form-label" for="rsvp-phone">Phone Number</label>
+      <label class="form-label" for="rsvp-phone">Contact Number</label>
       <input type="tel" id="rsvp-phone" class="form-input" placeholder="+94 XX XXX XXXX">
     </div>
 
@@ -933,7 +933,7 @@
     const guests  = document.getElementById('rsvp-guests').value || '1';
 
     if (!name) { alert('Please enter your name.'); return; }
-    if (!phone) { alert('Please enter your phone number.'); return; }
+    if (!phone) { alert('Please enter your contact number.'); return; }
 
     const msg = `*Wedding RSVP — Nisuda & Kavindi*\n\nName: ${name}\nPhone: ${phone}\nAttending: ${attendance}\nGuests: ${attendance === 'No' ? '0' : guests}`;
 
